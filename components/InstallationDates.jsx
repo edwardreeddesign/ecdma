@@ -6,7 +6,7 @@ const InstallationDates = () => {
     <div className="h-screen flex align-center justify-center flex-col">
       <motion.h4
         variants={titleReveal}
-        className="text-4xl font-light my-2 tracking-[4px]"
+        className="pt-32 text-xl md:text-4xl font-light my-2 tracking-[4px]"
       >
         Lodge Installation Dates
         <motion.hr

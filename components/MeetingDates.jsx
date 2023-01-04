@@ -4,10 +4,10 @@ import temples from '../data/lodges';
 
 const MeetingDates = () => {
   return (
-    <div className="h-screen flex align-center justify-center flex-col">
+    <div className="min-h-screen  flex align-center justify-center flex-col ">
       <motion.h4
         variants={titleReveal}
-        className="text-4xl font-light my-2 tracking-[4px]"
+        className="text-xl font-light my-2 tracking-[4px]"
       >
         Lodge Meeting Dates
         <motion.hr

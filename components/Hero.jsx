@@ -20,7 +20,7 @@ const Hero = () => {
     <div className="h-screen w-screen flex flex-col space-y-0 items-center justify-center text-center overflow-hidden z-20 bg-cover  ">
       <BackgroundCircles />
       <img
-        src="https://ecdma.vercel.app/images/edcm.svg"
+        src="/edcm.svg"
         alt="background"
         className="relative rounded-full h-32 w-32 mx-auto object-cover "
       />

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const LodgeCard = ({ temple }) => {
   return (
-    <article className="flex flex-col rounded-lg space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:[w-900px] snap-center bg-[#292929] p-10 opacity-60 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden">
+    <article className="flex flex-col rounded-lg space-y-7 flex-shrink-0 w-[400px]  md:w-[600px] xl:[w-900px] snap-center bg-[#292929] p-10 opacity-60 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <motion.img
         initial={{
           y: -100,

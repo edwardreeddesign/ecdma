@@ -3,10 +3,10 @@ import { slideLeft, titleReveal } from '../animations/animation';
 
 const OfficialVisit = () => {
   return (
-    <div className="h-screen flex align-center justify-center flex-col">
+    <div className="h-screen flex align-center justify-center flex-col py-10">
       <motion.h4
         variants={titleReveal}
-        className="text-4xl font-light my-2 tracking-[4px]"
+        className="mt-32 text-xl md:text-4xl font-light my-2 tracking-[4px] pt-20"
       >
         Lodge Official Visit Dates
         <motion.hr
@@ -14,7 +14,7 @@ const OfficialVisit = () => {
           className="border-2 border-[#A70100] mb-8"
         />
       </motion.h4>
-      <div className="gridItem">
+      <div className="gridItem ">
         <div className="border-b-2 border-[#A70100] bg-dark p-2 rounded-md;">
           <h5 className="name">Pelee No. 627</h5>
           <p className="info">84 East-West Rd., Pelee Island,</p>

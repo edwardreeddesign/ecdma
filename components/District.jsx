@@ -13,7 +13,7 @@ const District = () => {
         District Association
       </h3>
       <motion.img
-        src="https://ecdma.vercel.app/images/mapessex.png"
+        src="/mapessex.png"
         alt=" "
         initial={{
           x: -200,
