@@ -29,7 +29,7 @@ const Hero = () => {
           Essex County District
         </h2>
         <h1 className="text-5xl font-semibold px-10 text-gray-300 z-40 lg:text-6xl">
-          <span className="mr-3">{text}</span>
+          <span className="mr-3 text-sm md:text-lg">{text}</span>
           <Cursor cursorColor="#A70100" />
         </h1>
       </div>

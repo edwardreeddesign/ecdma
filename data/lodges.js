@@ -197,7 +197,7 @@ const temples = [
       },
       {
         name: 'Rose Lodge 500',
-        mainImage: '/navlogo.png',
+        mainImage: '/lodges/roseLodgeMain.jpeg',
         secondImage: '',
         thirdImage: '',
         fourthImage: '',

@@ -7,9 +7,9 @@ const District = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly items-center mx-auto"
+      className="min-h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly items-center mx-auto"
     >
-      <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl ">
+      <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-lg md:text-2xl  ">
         District Association
       </h3>
       <motion.img
@@ -24,7 +24,7 @@ const District = () => {
           opacity: 1,
           transition: { duration: 1, type: 'spring', stiffness: 50 },
         }}
-        className="-mb-20 mt-10 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:2-64 md:h-95 xl:w-[500px] xl:h-[600px]"
+        className="hidden md:inline-flex md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:2-64 md:h-95 xl:w-[500px] xl:h-[600px]"
       />
       <div className="space-y-10 px-0 md:px-10">
         <p className="leading-4 text-sm">

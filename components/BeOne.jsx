@@ -5,7 +5,7 @@ const BeOne = () => {
   return (
     <Banner>
       <div className="flex flex-col align-center justify-center w-full">
-        <h1 className="flex align-center justify-center tracking-[20px] uppercase text-5xl font-extrabold">
+        <h1 className="flex align-center justify-center tracking-[20px] uppercase text-xl md:text-2xl lg:text-5xl font-extrabold">
           2B1
           <img
             src="/navlogo.png"

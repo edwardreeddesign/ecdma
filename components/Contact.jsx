@@ -9,19 +9,19 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="min-h-screen flex flex-col relative  text-center md:text-left md:flex-row max-w-7xl xl:px-10 justify-evenly items-center mx-auto "
+      className="min-h-screen flex flex-col relative  text-center md:text-left md:flex-row max-w-7xl xl:px-10 justify-evenly items-center mx-auto px-4"
     >
-      <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl ">
+      <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-lg md:text-2xl ">
         Contact Us
       </h3>
       <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
+        <h4 className="text-xl md:text-4xl px-10 font-semibold text-center">
           Lets get in touch.{' '}
           <span className="decoration-[#A70100]/50 underline">
             Send us a Message
           </span>
         </h4>
-        <form className="flex flex-col space-y-2 w-fit mx-auto">
+        <form className="flex flex-col space-y-2 w-fit mx-auto px-4">
           <div className="flex space-x-2">
             <input
               {...register('name')}
