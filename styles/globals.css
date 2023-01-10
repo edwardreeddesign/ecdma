@@ -7,11 +7,15 @@
     @apply px-6 py-2 border-clDark rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border hover:border-clRed hover:text-[#A70100];
   }
   .contactInput {
-    @apply outline-none bg-slate-400/10 rounded-sm border-b border-[#242424] px-6 py-4 text-gray-500 placeholder-gray-500 transition-all focus:border-[#A70100]/40 focus:text-[#A70100] hover:border-[#A70100]/40;
+    @apply outline-none w-full bg-slate-400/10 rounded-sm border-b border-[#242424] px-6 py-4 text-gray-500 placeholder-gray-500 transition-all focus:border-[#A70100]/40 focus:text-[#A70100] hover:border-[#A70100]/40;
   }
 
   .primaryBtn {
     @apply outline-none bg-[#a70100] text-slate-300 uppercase px-8 py-4 rounded-full tracking-widest transition-all hover:bg-[#A70100]/80 hover:scale-95;
+  }
+
+  .cardBtn {
+    @apply text-[9px]  px-6 py-2 bg-dark border-clDark rounded-full uppercase  tracking-widest text-gray-200 transition-all hover:border hover:border-clRed hover:text-white;
   }
 
   .list {
@@ -22,13 +26,13 @@
   }
 
   .gridItem {
-    @apply bg-dark p-2  border-b-2 border-[#a70100] rounded-md w-96 md:w-full;
+    @apply bg-[#292929] p-2  border-b-2 border-[#a70100] rounded-md w-96 md:w-full;
   }
 
   .name {
-    @apply text-base md:text-xl font-light text-gray-300 mb-2;
+    @apply text-base md:text-xl font-semibold text-white mb-2;
   }
   .info {
-    @apply text-xs md:text-sm text-gray-200 mb-2;
+    @apply text-xs md:text-sm text-gray-400 mb-2;
   }
 }

@@ -28,20 +28,18 @@ const LodgeCard = ({ temple }) => {
             Our Lodges
           </h5>
         </div>
-        <div className="flex flex-0 flex-wrap align-center justify-center  flex-shrink-0">
+        <div className="flex flex-wrap align-center justify-center gap-2 flex-shrink-0 ">
           {temple.lodges.map(lodge => (
-            <div key={lodge.name}>
-              <Link href={`/lodge/${lodge.slug}`}>
-                <button className="heroButton flex items-center mt-2">
-                  {lodge.name}
-                  <img
-                    className="w-4 h-4 rounded-full ml-2"
-                    src={lodge.ctaImage}
-                    alt={lodge.name}
-                  />
-                </button>
-              </Link>
-            </div>
+            <Link href={`/lodge/${lodge.slug}`} key={lodge.name}>
+              <button className="cardBtn flex items-center mt-2">
+                {lodge.name}
+                <img
+                  className="hidden md:inline-flex w-4 h-4 rounded-full ml-2"
+                  src={lodge.ctaImage}
+                  alt={lodge.name}
+                />
+              </button>
+            </Link>
           ))}
         </div>
       </div>
