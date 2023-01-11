@@ -9,10 +9,9 @@ const About = () => {
       transition={{ duration: 1.5 }}
       className="h-screen flex flex-col relative text-center md:text-left  max-w-7xl px-10 justify-evenly items-center mx-auto"
     >
-      <Title>About</Title>
-      {/* <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-lg md:text-2xl ">
+      <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-lg md:text-2xl ">
         About
-      </h3> */}
+      </h3>
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-sm md:text-lg lg:text-2xl font-semibold text-center md:text-left text-gray-400">
           What is{' '}
