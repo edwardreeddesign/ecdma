@@ -5,7 +5,7 @@ import { titleReveal } from '../animations/animation';
 
 const LodgeCard = ({ temple }) => {
   return (
-    <article className="flex flex-col rounded-lg flex-shrink-0 max-h-[600px] w-[400px]  md:max-w-[600px] xl:[w-900px] snap-center bg-[#363636] p-2 mt-5 opacity-60 hover:opacity-100 cursor-pointer transition-opacity duration-200  ">
+    <article className="flex flex-col rounded-lg flex-shrink-0 max-h-[600px] w-[400px]  md:max-w-[600px] xl:[w-900px] snap-center bg-[#363636] p-2 mt-5 md:opacity-60 md:hover:opacity-100 cursor-pointer transition-opacity duration-200  ">
       <motion.img
         initial={{
           y: -100,
@@ -14,7 +14,7 @@ const LodgeCard = ({ temple }) => {
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="w-full h-20 rounded-lg xl:w-full  xl:rounded-lg object-cover object-center mx-auto  "
+        className="w-full h-20 lg:h-56 rounded-lg xl:w-full  xl:rounded-lg object-cover object-center mx-auto  "
         src={temple.image}
         alt={temple.name}
       />
