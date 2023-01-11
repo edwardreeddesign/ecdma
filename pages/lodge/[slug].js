@@ -7,26 +7,64 @@ import temples from '../../data/lodges';
 const LodgePage = ({ lodge }) => {
   return (
     <Layout title={lodge?.name}>
-      <div className="bg-primaryDark text-white h-screen w-screen flex  space-y-0 items-center justify-center text-center overflow-hidden relative px-5">
-        <Link href="/#lodges" className="absolute top-5 left-5">
+      <div className="bg-primaryDark text-white min-h-screen w-screen flex  space-y-0 items-center justify-center text-center overflow-hidden relative px-5">
+        <Link href="/#lodges" className="absolute top-0 left-5 ">
           <button className="heroButton">Back to Lodges</button>
         </Link>
-        <div className="flex">
+        <div className="flex flex-col gap-4 px-6 md:flex-row">
           <img
             src={lodge?.mainImage}
             alt={lodge?.name}
             className="h-[640px] rounded-xl object-cover"
           />
-        </div>
-        <div>
-          <h1>{lodge?.name} A.F. & A.M.</h1>
-          <div>
-            <h2>A Brief History</h2>
-            <p>{lodge?.history}</p>
-          </div>
-          <div>
-            <h2>Meetings</h2>
-            <p>{lodge?.meeting}</p>
+          <div className="flex flex-col justify-between">
+            <div className="space-y-2 text-left mt-2 md:mt-0 md:space-y-4 lg:space-y-8 mb-4 md:mb-0">
+              <h1 className="text-2xl md:text-4xl text-gray-400 font-semibold">
+                {lodge?.name} A.F. & A.M.
+              </h1>
+              <div>
+                <h2 className="md:text-xl text-gray-300 font-thin">
+                  A Brief History
+                </h2>
+                <p className="text-gray-400 font-light md:text-2xl">
+                  {lodge?.history}
+                </p>
+              </div>
+              <div>
+                <h2 className="md:text-xl text-gray-300 font-thin">Meetings</h2>
+                <p className="text-gray-400 font-light md:text-2xl">
+                  {lodge?.meeting}
+                </p>
+              </div>
+            </div>
+            <div className="flex align-center justify-between md:justify-start md:gap-4">
+              {lodge?.website ? (
+                <button className="primaryBtn">
+                  <a
+                    href={lodge?.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Lodge Website
+                  </a>
+                </button>
+              ) : (
+                ''
+              )}
+              {lodge?.facebook ? (
+                <button className="primaryBtn">
+                  <a
+                    href={lodge?.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Facebook
+                  </a>
+                </button>
+              ) : (
+                ''
+              )}
+            </div>
           </div>
         </div>
       </div>
