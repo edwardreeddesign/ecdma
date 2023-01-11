@@ -99,8 +99,8 @@ const temples = [
           'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
         meeting: 'Third Thursday at 8:00 PM except for July and August',
         installation: 'December 15, 2022 at 7:30 pm',
-        website: 'null',
-        facebook: 'null',
+        website: null,
+        facebook: null,
         slug: 'xenophon',
         officialVisit: 'October 20, 2022 at 7:30 pm',
       },
@@ -163,7 +163,7 @@ const temples = [
     lodges: [
       {
         name: 'Great Western 47',
-        mainImage: '/navlogo.png',
+        mainImage: '/lodges/greatWesternMain.jpeg',
         secondImage: '',
         thirdImage: '',
         fourthImage: '',
@@ -247,7 +247,7 @@ const temples = [
       },
       {
         name: 'Harmony Lodge 579',
-        mainImage: '/lodges/harmonymain.jpeg',
+        mainImage: '/lodges/harmonyMain.jpeg',
         secondImage: '',
         thirdImage: '',
         fourthImage: '',
@@ -263,7 +263,7 @@ const temples = [
       },
       {
         name: "St Andrew's 642",
-        mainImage: '/lodges/standrewmain.jpeg',
+        mainImage: '/lodges/stAndrewsMain.jpeg',
         secondImage: '',
         thirdImage: '',
         fourthImage: '',

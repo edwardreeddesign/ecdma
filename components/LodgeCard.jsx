@@ -40,7 +40,7 @@ const LodgeCard = ({ temple }) => {
         </p>
         <div>
           <h5 className="text-xl text-center font-medium text-white drop-shadow-md  mt-1">
-            Our Lodges
+            Our Lodge{temple.lodges.length > 1 ? 's' : ''}
           </h5>
         </div>
         <div className="flex flex-wrap align-center justify-center gap-2 flex-shrink-0 ">

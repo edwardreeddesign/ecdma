@@ -11,11 +11,11 @@ const LodgePage = ({ lodge }) => {
         <Link href="/#lodges" className="absolute top-0 left-5 ">
           <button className="heroButton">Back to Lodges</button>
         </Link>
-        <div className="flex flex-col gap-4 px-6 md:flex-row">
+        <div className="flex flex-col gap-4 px-6 md:flex-row ">
           <img
             src={lodge?.mainImage}
             alt={lodge?.name}
-            className="h-[640px] rounded-xl object-cover"
+            className="h-[640px] rounded-xl object-cover mt-10 md:mt-0"
           />
           <div className="flex flex-col justify-between">
             <div className="space-y-2 text-left mt-2 md:mt-0 md:space-y-4 lg:space-y-8 mb-4 md:mb-0">
