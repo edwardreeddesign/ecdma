@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { titleReveal } from '../animations/animation';
 
 const LodgeCard = ({ temple }) => {
   return (
-    <article className="flex flex-col rounded-lg space-y-7 flex-shrink-0 w-[400px]  md:w-[600px] xl:[w-900px] snap-center bg-[#292929] p-10 opacity-60 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden">
+    <article className="flex flex-col rounded-lg flex-shrink-0 max-h-[600px] w-[400px]  md:max-w-[600px] xl:[w-900px] snap-center bg-[#363636] p-2 mt-5 opacity-60 hover:opacity-100 cursor-pointer transition-opacity duration-200  ">
       <motion.img
         initial={{
           y: -100,
@@ -13,18 +14,32 @@ const LodgeCard = ({ temple }) => {
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="w-32 h-32 rounded-full xl:w-full xl:h-[225px] xl:rounded-lg object-cover object-center"
+        className="w-full h-20 rounded-lg xl:w-full  xl:rounded-lg object-cover object-center mx-auto  "
         src={temple.image}
         alt={temple.name}
       />
-      <div className="px-0 md:px-10 text-left">
-        <p className="font-thin text-2xl mt-1">{temple.address}</p>
-        <h4 className="text-4xl font-light">{temple.location}</h4>
-        <p className="font-extralight text-xl mt-1">
+
+      <motion.div
+        initial={{
+          y: -100,
+          opacity: 0,
+        }}
+        transition={{ duration: 1.4 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="p-2 mx-auto  h-full text-left top-0 rounded-xl   w-full  flex flex-col space-y-1 "
+      >
+        <p className="font-semibold text-xs lg:text-xl  text-white drop-shadow-md	">
+          {temple.address}
+        </p>
+        <h4 className="text-xl md:text-2xl font-medium text-white drop-shadow-md text-center underline">
+          {temple.location}
+        </h4>
+        <p className="  text-sm mt-1 text-white drop-shadow-md">
           Parking: {temple.parking}
         </p>
         <div>
-          <h5 className="text-2xl font-medium text-[#dd0404]  mt-2">
+          <h5 className="text-xl text-center font-medium text-white drop-shadow-md  mt-1">
             Our Lodges
           </h5>
         </div>
@@ -42,7 +57,7 @@ const LodgeCard = ({ temple }) => {
             </Link>
           ))}
         </div>
-      </div>
+      </motion.div>
     </article>
   );
 };

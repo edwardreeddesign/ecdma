@@ -15,7 +15,7 @@
   }
 
   .cardBtn {
-    @apply text-[9px]  px-6 py-2 bg-dark border-clDark rounded-full uppercase  tracking-widest text-gray-200 transition-all hover:border hover:border-clRed hover:text-white;
+    @apply text-[9px]  px-6 py-2 bg-[#242424] border-clDark rounded-full uppercase  tracking-widest text-gray-200 transition-all hover:border hover:border-clRed hover:text-white;
   }
 
   .list {

@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Title from './Title';
+import Wrapper from './Wrapper';
 
 const District = () => {
   return (
@@ -7,11 +9,13 @@ const District = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="min-h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly items-center mx-auto"
+      className="min-h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-4 justify-evenly items-center mx-auto"
     >
-      <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-lg md:text-2xl  ">
-        District Association
-      </h3>
+      <div className="w-full">
+        <h3 className="absolute top-24 text-center uppercase tracking-[20px] text-gray-500 text-sm md:text-xl lg:text-2xl mx-auto w-full">
+          District Association
+        </h3>
+      </div>
       <motion.img
         src="/mapessex.png"
         alt=" "
@@ -24,9 +28,9 @@ const District = () => {
           opacity: 1,
           transition: { duration: 1, type: 'spring', stiffness: 50 },
         }}
-        className="hidden md:inline-flex md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:2-64 md:h-95 xl:w-[500px] xl:h-[600px]"
+        className="hidden md:inline-flex md:mb-0  w-56 h-56 rounded-full object-cover md:rounded-lg  xl:w-[600px] xl:h-[400px]"
       />
-      <div className="space-y-10 px-0 md:px-10">
+      <div className="space-y-10  md:px-10 ">
         <p className="leading-4 text-sm">
           The purpose of the Essex County District Masonic Association is to
           promote Masonry in general, to communicate with members thereby
